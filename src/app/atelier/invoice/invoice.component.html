@@ -1,0 +1,17 @@
+<div *ngIf="active">
+    <p>id:{{id}}</p>
+    <p>montantFacture:{{montantFacture}}</p>
+    <p>montantRemise:{{montantRemise}}</p>
+    <p>dateFacture:{{dateFacture}}</p>
+    <p>active:{{active}}</p>
+</div>
+
+<div *ngIf="!active">
+    <p>Impossible de visualiser des détails de la facture</p>
+</div>
+<!--path params-->
+
+<input type="button" value="Retour" routerLink="../../" class="btn btn-primary"/>
+<!--query params-->
+
+<input type="button" value="Retour" routerLink="../" class="btn btn-primary"/>

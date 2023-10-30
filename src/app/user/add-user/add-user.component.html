@@ -1,0 +1,54 @@
+<h1>add-user works!</h1>
+
+<form #addForm="ngForm" (ngSubmit)="addng(addForm.value)">
+    <div class="form-group">
+
+        <label for="firstName">firstName</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" ngModel required minlength="3" #firstName="ngModel" pattern="[a-zA-Z]*"/>
+        <small class="text-danger" *ngIf="firstName?.errors?.['required'] && firstName.touched">name is required</small>
+        <small class="text-danger" *ngIf="firstName?.errors?.['minlength'] && firstName.touched">name must be at least 3 letters</small>
+        <br>
+        
+        <label for="lastName">lastName</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" ngModel required minlength="3" #lastName="ngModel" pattern="[a-zA-Z]*"/>
+        <small class="text-danger" *ngIf="lastName?.errors?.['required'] && lastName.touched">lastname is required</small>
+        <small class="text-danger" *ngIf="lastName?.errors?.['minlength'] && lastName.touched">lastname must be at least 3 letters</small>
+        
+        <br>
+
+        <label for="birthDate">birthDate</label>
+        <input type="date" class="form-control" id="birthDate" name="birthDate" ngModel required #birthDate="ngModel"  />
+        <small class="text-danger" *ngIf="birthDate?.errors?.['required'] && birthDate.touched">birthDate is required</small>
+        
+        <br>
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" ngModel required pattern="^[a-zA-Z0-9._-]+@gmail.com" #email="ngModel" />
+        <small class="text-danger" *ngIf="email?.errors?.['required'] && email.touched">email is required</small>
+        <br>
+        <label for="password">password</label>
+        <input type="password" class="form-control" id="password" name="password" ngModel required minlength="8" #password="ngModel" pattern="^[a-zA-Z0-9]{8,}?"  />
+        <small class="text-danger" *ngIf="password?.errors?.['required'] && password.touched">password is required</small>
+        <small class="text-danger" *ngIf="password?.errors?.['minlength'] && password.touched">password must be at least 8 letters</small>
+        <br>
+        <label for="profession">proffession</label>
+        <input type="text" class="form-control" id="profession" name="profession" ngModel required minlength="3" #profession="ngModel" />
+        <small class="text-danger" *ngIf="profession?.errors?.['required'] && profession.touched">proffession is required</small>
+        <small class="text-danger" *ngIf="profession?.errors?.['minlength'] && profession.touched">proffession must be at least 3 letters</small>
+        <br>
+        <label for="accountCategory">customer category</label>
+        <!--<input type="text" class="form-control" aria-label="Disabled input example" value="Customer" ngModel #customer="ngModel" disabled readonly/>
+    -->
+        <br>
+
+        <select class="form-select" aria-label="Default select example" id="accountCategory" name="accountCategory" disabled aria-readonly="true">
+            <option selected value="Customer">Customer</option>
+            <option value="Admin">Admin</option>
+            <option value="Golden">Golden</option>
+            <option value="Blocked Account">Blocked Account</option>
+          </select>
+
+        
+    <button type="submit" class="btn btn-primary" [disabled]="addForm.invalid">submit</button>
+
+    </div>
+    </form>

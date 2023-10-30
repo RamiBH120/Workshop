@@ -1,0 +1,22 @@
+<h1>Liste des produits</h1>
+<table border="1">
+    <tr>
+        <td>product id</td>
+        <td>libellé</td>
+        <td>code</td>
+        <td>pu</td>
+        <td>tva</td>
+        <td>nb products</td>
+    </tr>
+    <tr *ngFor="let item of ListProducts">
+
+    <td>{{item.id}}</td>
+        
+        <td>{{item.libelle}}</td>
+        <td>{{item.code}}</td>
+        <td>{{item.prixunitaire}}</td>
+        <td>{{item.tauxTva}}</td>
+        <td><button (click)="count(item)">calculer</button><p *ngIf="item === selectedProd">{{nbProductsByLibelle}}</p> </td>
+    
+    </tr>
+</table>

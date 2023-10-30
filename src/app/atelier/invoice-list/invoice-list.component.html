@@ -1,0 +1,9 @@
+<!--path params-->
+<ul *ngFor="let item of list;let i = index">
+    <li>Facture : {{item.idFacture}} <a [routerLink]="['/invoice',item.idFacture,item.active]" [queryParams]="{montantFacture:item.montantFacture,montantRemise:item.montantRemise,dateFacture:item.dateFacture}">Details</a></li>
+</ul>
+
+<!--query params-->
+<ul *ngFor="let item of list;let i = index">
+    <li>Facture : {{item.idFacture}} <a [routerLink]="['/invoice']" [queryParams]="{id:item.idFacture,active:item.active,montantFacture:item.montantFacture,montantRemise:item.montantRemise,dateFacture:item.dateFacture}">Details</a></li>
+</ul>

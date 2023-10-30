@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Nour",
+      "lastName": " Kunis",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Admin",
+      "email": "mila@kunis.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "id": 2,
+      "firstName": "test",
+      "lastName": " Kunis",
+      "birthDate": "1999-06-30",
+      "email": "mila@kunis.com",
+      "password": "test",
+      "profession": "Software Engineer",
+      "accountCategory": "Admin",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png"
+    },
+    {
+      "id": 3,
+      "firstName": "George",
+      "lastName": "Cloney",
+      "birthDate": "1999-06-30",
+      "email": "marlon@brando.com",
+      "password": "test",
+      "profession": "Software Engineer",
+      "accountCategory": "Customer",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar1.png"
+    },
+    {
+      "id": 4,
+      "firstName": "Ryan",
+      "lastName": "Gossling",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Golden",
+      "email": "Ryan@nicholson.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar4.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "id": 5,
+      "firstName": "Robert",
+      "lastName": "Downey",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Blocked Account",
+      "email": "robert@nicholson.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar5.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "fn": "Robert",
+      "ln": "Downey",
+      "bd": "1999-06-30",
+      "email": "robert@gmail.com",
+      "password": "test00000",
+      "profession": "Software Engineer",
+      "id": 10
+    },
+    {
+      "firstName": "Robertoos",
+      "lastName": "llloppp",
+      "birthDate": "1999-06-30",
+      "email": "loop@gmail.com",
+      "password": "test1111",
+      "profession": "Software Engineer",
+      "id": 15,
+      "picture": "https://bootdey.com/img/Content/avatar/avatar5.png"
+    },
+    {
+      "firstName": "Robertoos",
+      "lastName": "llloppp",
+      "birthDate": "2023-10-05",
+      "email": "jock@gmail.com",
+      "password": "jock12315",
+      "profession": "jjjoososd",
+      "id": 16,
+      "picture": "https://bootdey.com/img/Content/avatar/avatar5.png"
+    }
+  ]
+}
